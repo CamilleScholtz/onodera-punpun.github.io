@@ -294,7 +294,6 @@ hr {
 
 .frame7 .one {
     float: left;
-    margin-bottom: 42px;
     width: -moz-calc(60.1% - 9px);
     width: -o-calc(60.1% - 9px);
     width: -webkit-calc(60.1% - 9px);
@@ -308,5 +307,3 @@ hr {
     width: -webkit-calc(39.9% - 9px);
     width: calc(39.9% - 9px);
 }
-
-
