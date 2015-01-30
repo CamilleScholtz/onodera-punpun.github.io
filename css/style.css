@@ -82,9 +82,11 @@ header {
 }
 
 @media (max-width: 1280px) {
-    header {
-        margin-left: 40px;
-        margin-right: 40px;
+   header {
+        width: -moz-calc(100% - 80px);
+        width: -o-calc(100% - 80px);
+        width: -webkit-calc(100% - 80px);
+        width: calc(100% - 80px);
     }
 }
 
@@ -178,16 +180,6 @@ header h3 {
     margin-top: -16px;
 }
 
-header h5, header h6, header h7 {
-    margin-right: 66px
-}
-
-@media (min-width: 1280px) {
-    header h5, header h6, header h7 {
-        margin-right: 0px;
-    }
-}
-
 .change2, .change3, .change4 {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -250,21 +242,9 @@ hr {
 
     .right {
         float: right;
-    }
+    } 
 
-    .fix {
-        margin-top: 12px !important;
-    }
-
-    .eight {
-        max-width: 790px;
-        width: -moz-calc(66.66% - 10px);
-        width: -o-calc(66.66% - 10px);
-        width: -webkit-calc(66.66% - 10px);
-        width: calc(66.66% - 10px);
-    }
-
-    .four {
+    .w390 {
         max-width: 390px;
         width: -moz-calc(33.33% - 10px);
         width: -o-calc(33.33% - 10px);
@@ -272,13 +252,36 @@ hr {
         width: calc(33.33% - 10px);
     }
 
-    .frame2 .one {
-        float: left;
-        margin-bottom: 37px;
-        width: -moz-calc(38% - 9px);
-        width: -o-calc(38% - 9px);
-        width: -webkit-calc(38% - 9px);
-        width: calc(38% - 9px);
+    .w790 {
+        max-width: 790px;
+        width: -moz-calc(66.66% - 10px);
+        width: -o-calc(66.66% - 10px);
+        width: -webkit-calc(66.66% - 10px);
+        width: calc(66.66% - 10px);
+    }
+
+    .h700 {
+        max-height: 700px;
+    }
+
+    @media (min-width: 1280px) {
+        .h700 {
+            max-height: 700px !important;
+            height: -moz-calc(100% - 20px) !important;
+            height: -o-calc(100% - 20px) !important;
+            height: -webkit-calc(100% - 20px) !important;
+            height: calc(100% - 20px) !important;
+        }
+    }
+
+/*
+.frame2 .one {
+    float: left;
+    margin-bottom: 37px;
+    width: -moz-calc(38% - 9px);
+    width: -o-calc(38% - 9px);
+    width: -webkit-calc(38% - 9px);
+    width: calc(38% - 9px);
     }
 
 .frame2 .two {
@@ -339,3 +342,5 @@ hr {
     width: -webkit-calc(39.9% - 9px);
     width: calc(39.9% - 9px);
 }
+
+*/
