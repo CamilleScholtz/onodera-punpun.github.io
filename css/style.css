@@ -213,7 +213,7 @@ hr {
     width: 100%;
 }
 
-.hr1 {
+.hrfix {
     margin-bottom: 0;
     margin-top: -7px;
 }
@@ -253,7 +253,7 @@ hr {
     }
 
     .fix {
-        margin-top: 11px !important;
+        margin-top: 12px !important;
     }
 
     .eight {
