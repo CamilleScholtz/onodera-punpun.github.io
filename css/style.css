@@ -230,10 +230,9 @@ hr {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     -o-transition: opacity 0.2s ease-in-out 0s;
     -webkit-transition: opacity 0.2s ease-in-out 0s;
-    border: 1px solid #fff;
     filter: alpha(opacity=95);
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     max-width: 100%;
     opacity: 0.95;
     transition: opacity 0.2s ease-in-out 0s;
@@ -245,14 +244,42 @@ hr {
     opacity: 1;
 }
 
-.frame2 .one {
-    float: left;
-    margin-bottom: 37px;
-    width: -moz-calc(38% - 9px);
-    width: -o-calc(38% - 9px);
-    width: -webkit-calc(38% - 9px);
-    width: calc(38% - 9px);
-}
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .fix {
+        margin-top: 11px !important;
+    }
+
+    .eight {
+        max-width: 790px;
+        width: -moz-calc(66.66% - 10px);
+        width: -o-calc(66.66% - 10px);
+        width: -webkit-calc(66.66% - 10px);
+        width: calc(66.66% - 10px);
+    }
+
+    .four {
+        max-width: 390px;
+        width: -moz-calc(33.33% - 10px);
+        width: -o-calc(33.33% - 10px);
+        width: -webkit-calc(33.33% - 10px);
+        width: calc(33.33% - 10px);
+    }
+
+    .frame2 .one {
+        float: left;
+        margin-bottom: 37px;
+        width: -moz-calc(38% - 9px);
+        width: -o-calc(38% - 9px);
+        width: -webkit-calc(38% - 9px);
+        width: calc(38% - 9px);
+    }
 
 .frame2 .two {
     float: right;
