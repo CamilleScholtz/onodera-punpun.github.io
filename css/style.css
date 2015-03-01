@@ -25,10 +25,13 @@ html {
 	max-width: 1200px;
 }
 
-body {
+body { 
 	font-family: "Alte Haas Grotesk", "sans-serif";
-	margin: 0;
+	margin: 0 auto;
+	max-width: 1200px;
 	padding: 0;
+	top: 0px;
+	width: 75%;
 }
 
 ::selection {
@@ -44,11 +47,9 @@ body {
 #header {
 	background: #FFFFFF;
 	border: 20px solid #FFFFFF;
-	left: 12.5%;
 	margin-left: -20px;
-	position: absolute;
 	top: 0px;
-	z-index: -1;
+	width: 210px;
 }
 
 #header h1 {
@@ -81,10 +82,8 @@ body {
 /* Content */
 
 #content {
-	margin: 0 auto;
-	margin-top: 131px;
-	max-width: 1200px;
-	width: 75%;
+	margin-top: 8px;
+	width: 100%;
 }
 
 #content img {
