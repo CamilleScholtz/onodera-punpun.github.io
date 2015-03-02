@@ -112,15 +112,22 @@ a:hover .logo {
 	opacity: 1;
 }
 
-
 .logo img {
 	border: 10px solid #FFFFFF !important;
 	margin-right: 24px;
 }
 
+/* TODO: Colors are meh */
+.logo .monkey {
+	border: 10px solid #f96f6f !important;
+	border-left: 4px solid #f96f6f !important;
+	border-right: 2px solid #f96f6f !important;
+}
+
+/* TODO: Fix max-width when under 1200px */
 .left {
 	float: left;
-	max-width: calc(64.4% - 24px) !important;
+	max-width: calc(64.65% - 24px) !important;
 }
 
 .left .logo {
@@ -129,6 +136,6 @@ a:hover .logo {
 
 .right {
 	float: right;
-	max-width: calc(35.6% - 24px) !important;
+	max-width: calc(35.35% - 24px) !important;
 }
 
