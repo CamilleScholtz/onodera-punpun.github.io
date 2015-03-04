@@ -93,6 +93,16 @@ body {
 	max-width: 100%;
 }
 
+hr {
+	border: 0;
+	height: 8px;
+	margin-bottom: 8px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-top: 0px;
+	padding: 0;
+}
+
 .logo {
 	-moz-transition: all 0.1s ease-in-out 0.2s;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -124,18 +134,19 @@ a:hover .logo {
 	border-right: 2px solid #f96f6f !important;
 }
 
-/* TODO: Fix max-width when under 1200px */
-.left {
-	float: left;
-	max-width: calc(64.65% - 24px) !important;
-}
-
 .left .logo {
 	right: calc(35.6% + 48px) !important;
 }
 
+
+/* TODO: Fix width/height and remove(?) #frame */
+.left {
+	float: left;
+    width: calc(64.4% - 24px) !important;
+}
+
 .right {
 	float: right;
-	max-width: calc(35.35% - 24px) !important;
+	width: calc(35.6% - 24px) !important;
 }
 
