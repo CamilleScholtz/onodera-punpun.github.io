@@ -103,14 +103,21 @@ hr {
 	padding: 0;
 }
 
+/* TODO: Fix */
+hr .fix {
+	height: 20px !important;
+	margin-top: 40px !important;
+	margin-bottom: 20px !important;
+}
+
 .logo {
 	-moz-transition: all 0.1s ease-in-out 0.2s;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-o-transition: all 0.1s ease-in-out 0.2s;
 	-webkit-transition: all 0.1s ease-in-out 0.2s;
 	filter: alpha(opacity=0);
-	right: 124px;
 	margin-top: 28px;
+	margin-left: 28px;
 	position: absolute;
 	opacity: 0;
 	transition: all 0.1s ease-in-out 0.2s;
@@ -135,18 +142,18 @@ a:hover .logo {
 }
 
 .left .logo {
-	right: calc(35.6% + 48px) !important;
+	right: calc(50% + 48px) !important;
 }
 
 
 /* TODO: Fix width/height and remove(?) #frame */
 .left {
 	float: left;
-    width: calc(64.4% - 24px) !important;
+    width: calc(50% - 24px) !important
 }
 
 .right {
 	float: right;
-	width: calc(35.6% - 24px) !important;
+	width: calc(50% - 24px) !important;
 }
 
