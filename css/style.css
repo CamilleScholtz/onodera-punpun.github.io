@@ -93,6 +93,16 @@ body {
 	max-width: 100%;
 }
 
+.left {
+	float: left;
+    width: calc(50% - 24px) !important
+}
+
+.right {
+	float: right;
+	width: calc(50% - 24px) !important;
+}
+
 hr {
 	border: 0;
 	height: 8px;
@@ -141,19 +151,6 @@ a:hover .logo {
 	border-right: 2px solid #f96f6f !important;
 }
 
-.left .logo {
-	right: calc(50% + 48px) !important;
+.right .logo {
+	left: calc(50% + 24px) !important;
 }
-
-
-/* TODO: Fix width/height and remove(?) #frame */
-.left {
-	float: left;
-    width: calc(50% - 24px) !important
-}
-
-.right {
-	float: right;
-	width: calc(50% - 24px) !important;
-}
-
