@@ -1,4 +1,4 @@
-/* Base */
+/* BASE */
 
 @font-face {
 	font-family: "Alte Haas Grotesk";
@@ -20,15 +20,15 @@
 }
 
 html {
-	background: #F9F9F9;
+	background: url(../assets/image/bg.png);
 	margin: 0 auto;
-	max-width: 1200px;
 }
 
-body { 
+body {
+	background: linear-gradient(to bottom right, #FBFAF8, #F7F4EF, #F5F2ED, #FBFAF8, #F7F4EF, #F5F2ED, #FBFAF8, #F7F4EF, #F5F2ED);
 	font-family: "Alte Haas Grotesk", "sans-serif";
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1000px;
 	padding: 0;
 	top: 0px;
 	width: 75%;
@@ -42,115 +42,135 @@ body {
 	background: rgba(26, 163, 154, 0.5);
 }
 
-/* Header */
+
+/* BORDERS */
+
+#border-left, #border-right, #border-top, #border-bottom {
+	position: fixed;
+	background: #efefed;
+	z-index: 10;
+}
+
+#border-left, #border-right {
+	top: 0px;
+	height: 100%;
+	width: 50px;
+}
+
+#border-top, #border-bottom {
+	left: 0px;
+	height: 50px;
+	width: 100%;
+}
+
+#border-left {
+	left: 0px;
+}
+
+#border-right {
+	right: 0px;
+}
+
+#border-top {
+	top: 0px;
+}
+
+#border-bottom {
+	bottom: 0px;
+}
+
+
+/* HEADER */
 
 #header {
-	background: #FFFFFF;
-	border: 20px solid #FFFFFF;
-	margin-left: -20px;
-	top: 0px;
-	width: 210px;
+	background: url(../assets/image/bg.png);
+	height: 150px;
+	margin-top: 80px;
 }
 
 #header h1 {
-	color: #3C4C5C;
+	color: #A39F9E;
 	font-family: "Alte Haas Grotesk Bold", "sans-serif";
-	font-size: 20px;
+	font-size: 32px;
 	font-weight: normal;
+	letter-spacing: 6px;
 }
 
-
 #header h2 {
-	color: #1AA39A;
+	color: #A39F9E;
 	font-family: "Alte Haas Grotesk Bold", "sans-serif";
 	font-size: 15px;
 	font-weight: normal;
 }
 
 #header h2 a {
-	-moz-transition: opacity 0.2s ease-in-out 0s;
-	-o-transition: opacity 0.2s ease-in-out 0s;
-	-webkit-transition: opacity 0.2s ease-in-out 0s;
-	color: #1AA39A;
-	transition: opacity 0.2s ease-in-out 0s;
+	color: #A39F9E;
+	border: 1px solid #A39F9E;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 15px;
+	font-weight: normal;
+	padding: 10px;
 }
 
-#header h2 a:hover {
-	color: #158C85
-}
 
-/* Content */
+/* CONTENT */
 
 #content {
-	margin-top: 8px;
 	width: 100%;
 }
 
+#content h1, #content h2 {
+	position: absolute;
+	margin: 40px;
+	border: 1px solid #A39F9E;
+	color: #A39F9E;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 22px;
+	font-weight: normal;
+	text-shadow: 0 0 40px #FBFAF8;
+	letter-spacing: 6px;
+	padding: 50px;
+}
+
+.info  {
+	position: absolute;
+	margin: 40px;
+	margin-top: 200px;
+}
+
+#content h3 {
+	border: 1px solid #A39F9E;
+	color: #A39F9E;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 15px;
+	font-weight: normal;
+	text-shadow: 0 0 40px #FBFAF8;
+	margin-top: -10px;
+	padding: 10px;
+}
+
+#content a {
+	padding: 0;
+}
+
 #content img {
-	border: 20px solid #FFFFFF;
-	margin-bottom: 8px;
-	margin-left: -20px;
-	max-width: 100%;
+	max-width: 720px;
 }
 
 .left {
 	float: left;
-    width: calc(50% - 24px) !important
 }
 
 .right {
 	float: right;
-	width: calc(50% - 24px) !important;
 }
 
 hr {
+	background: url(../assets/image/bg.png);
 	border: 0;
-	height: 8px;
-	margin-bottom: 8px;
-	margin-left: -20px;
-	margin-right: -20px;
-	margin-top: 0px;
+	clear: both;
+	height: 100px;
+	margin: 0;
 	padding: 0;
-}
-
-/* TODO: Fix */
-hr .fix {
-	height: 20px !important;
-	margin-top: 40px !important;
-	margin-bottom: 20px !important;
-}
-
-.logo {
-	-moz-transition: all 0.1s ease-in-out 0.2s;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	-o-transition: all 0.1s ease-in-out 0.2s;
-	-webkit-transition: all 0.1s ease-in-out 0.2s;
-	filter: alpha(opacity=0);
-	margin-top: 28px;
-	margin-left: 28px;
-	position: absolute;
-	opacity: 0;
-	transition: all 0.1s ease-in-out 0.2s;
-}
-
-a:hover .logo {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-}
-
-.logo img {
-	border: 10px solid #FFFFFF !important;
-	margin-right: 24px;
-}
-
-/* TODO: Colors are meh */
-.logo .monkey {
-	border: 10px solid #f96f6f !important;
-	border-left: 4px solid #f96f6f !important;
-	border-right: 2px solid #f96f6f !important;
-}
-
-.right .logo {
-	left: calc(50% + 24px) !important;
+	width: 100%;
 }
