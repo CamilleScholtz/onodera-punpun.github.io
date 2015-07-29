@@ -25,7 +25,7 @@ html {
 }
 
 body {
-	background: linear-gradient(to bottom right, #FBFAF8, #F7F4EF, #F5F2ED, #FBFAF8, #F7F4EF, #F5F2ED, #FBFAF8, #F7F4EF, #F5F2ED);
+	background: repeating-linear-gradient(to right bottom, #FBFAF8, #F7F4EF, #F5F2ED, #FBFAF8 800px);
 	font-family: "Alte Haas Grotesk", "sans-serif";
 	margin: 0 auto;
 	max-width: 1000px;
@@ -119,11 +119,17 @@ body {
 	width: 100%;
 }
 
-#content h1, #content h2 {
+.text {
 	position: absolute;
+	max-width: 1000px;
+	width: 75%;
+}
+
+#content h1, #content h2 {
 	margin: 40px;
 	border: 1px solid #A39F9E;
 	color: #A39F9E;
+	display: inline-block;
 	font-family: "Alte Haas Grotesk Bold", "sans-serif";
 	font-size: 22px;
 	font-weight: normal;
@@ -132,20 +138,20 @@ body {
 	padding: 50px;
 }
 
-.info  {
-	position: absolute;
-	margin: 40px;
-	margin-top: 200px;
+.info {
+	margin: 37px;
+	margin-top: -37px;
 }
 
 #content h3 {
 	border: 1px solid #A39F9E;
 	color: #A39F9E;
+	display: inline-block;
 	font-family: "Alte Haas Grotesk Bold", "sans-serif";
 	font-size: 15px;
 	font-weight: normal;
 	text-shadow: 0 0 40px #FBFAF8;
-	margin-top: -10px;
+	margin: 3px;
 	padding: 10px;
 }
 
@@ -159,10 +165,12 @@ body {
 
 .left {
 	float: left;
+	text-align: left;
 }
 
 .right {
 	float: right;
+	text-align: right;
 }
 
 hr {
