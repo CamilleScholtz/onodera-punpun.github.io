@@ -1,0 +1,379 @@
+/* Base
+   ================================================== */
+
+@font-face {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../assets/fonts/fontawesome-webfont.eot);
+    src: url(../assets/fonts/fontawesome-webfont.eot) format("embedded-opentype"), url(../assets/fonts/fontawesome-webfont.woff) format("woff"), url(../assets/fonts/fontawesome-webfont.ttf) format("truetype"), url(../assets/fonts/fontawesome-webfont.svg) format("svg");
+}
+
+* {
+    text-decoration: none
+}
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    background: #fff;
+    font-family: "Lato";
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+::selection {
+    background: rgba(26, 163, 154, 0.5)
+}
+
+::-moz-selection {
+    background: rgba(26, 163, 154, 0.5)
+}
+
+/* Sidebar
+   ================================================== */
+
+header {
+    -webkit-background-size: 320px auto;
+    background: url(../assets/bg3.jpg);
+    background-size: 320px auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 320px;
+    z-index: 8000;
+}
+
+header h1 a {
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    bottom: 19%;
+    color: #fff;
+    font-family: Lobster;
+    font-size: 53px;
+    font-weight: 400;
+    left: 32px;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: 0 0 6px rgba(25, 25, 25, 0.1);
+    transition: all 0.2s ease 0s;
+    white-space: nowrap;
+    width: 288px;
+}
+
+header h1 a:hover {
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    color: #1aa39a;
+    transition: all 0.2s ease 0s;
+}
+
+/* Buttons sidebar
+   ================================================== */
+
+.bg {
+    -moz-border-radius: 64px;
+    -moz-box-shadow: 0 0 6px rgba(25, 25, 25, 0.1);
+    -moz-transition: border 0.2s ease 0s;
+    -o-transition: border 0.2s ease 0s;
+    -webkit-border-radius: 64px;
+    -webkit-box-shadow: 0 0 6px rgba(25, 25, 25, 0.1);
+    -webkit-transition: border 0.2s ease 0s;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 64px;
+    bottom: 27%;
+    font-family: "FontAwesome";
+    box-shadow: 0 0 6px rgba(25, 25, 25, 0.1);
+    cursor: pointer;
+    height: 56px;
+    position: absolute;
+    transition: border 0.2s ease 0s;
+    width: 56px;
+}
+
+.bg p {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #3d4b4f;
+    cursor: pointer;
+    font-size: 36px;
+    position: static;
+}
+
+.bg1 p:hover ~ .bg1, .bg2 p:hover ~ .bg2, .bg3 ~ p:hover .bg3, .bg1:hover, .bg2:hover, .bg3:hover {
+    border: 3px solid #1aa39a;
+}
+
+.bg1 {
+    left: 30px
+}
+
+.bg2 {
+    left: 130px
+}
+
+.bg3 {
+    left: 230px
+}
+
+.bg1 p {
+    margin-left: 11px;
+}
+
+.bg2 p {
+    margin-top: 9px;
+    margin-left: 11px;
+}
+
+.bg3 p {
+    margin-left: 16px;
+}
+
+#contento {
+    display: none;
+    position: absolute;
+    left: 40px;
+    width: 240px;
+    height: 250px;
+    background: #fff;
+    border-radius: 1px;
+    bottom: 37%;
+    box-shadow: 0 0 6px rgba(25, 25, 25, 0.1);
+}
+
+.arrow {
+    -moz-transition: left 0.2s ease 0s;
+    -o-transition: left 0.2s ease 0s;
+    -webkit-transition: left 0.2s ease 0s;  
+    color: #fff;
+    position: absolute;
+    bottom: -67px;
+    font-family: "FontAwesome";
+    left: 109px;
+    font-size: 40px;
+    cursor: default;
+    transition: left 0.2s ease 0s;
+}
+
+/* Content
+   ================================================== */
+
+#content {
+    margin-left: 352px;
+    margin-right: 32px;
+    margin-top: 16px;
+}
+
+/* Frames
+   ================================================== */
+
+#frames {
+    -moz-column-count: 3;
+    -moz-column-gap: 32px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 32px;
+    column-count: 3;
+    column-gap: 32px;
+    float: right;
+    max-width: 1063px;
+}
+
+    @media (max-width: 1063px) {
+        #frames {
+            -moz-column-count: 2;
+            -moz-column-gap: 32px;
+            -webkit-column-count: 2;
+            -webkit-column-gap: 32px;
+            column-count: 2;
+            column-gap: 32px;
+        }
+    }
+
+    @media (max-width: 698px) {
+        #frames {
+            -moz-column-count: 1;
+            -moz-column-gap: 32px;
+            -webkit-column-count: 1;
+            -webkit-column-gap: 32px;
+            column-count: 1;
+            column-gap: 32px;
+        }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        #frames {
+            -moz-column-count: 1;
+            -moz-column-gap: 32px;
+            -webkit-column-count: 1;
+            -webkit-column-gap: 32px;
+            column-count: 1;
+            column-gap: 32px;
+        }
+    }
+
+
+    @media only screen and (max-device-width: 480px) {
+        #frames {
+            -moz-column-count: 1;
+            -moz-column-gap: 32px;
+            -webkit-column-count: 1;
+            -webkit-column-gap: 32px;
+            column-count: 1;
+            column-gap: 32px;
+        }
+    }
+
+#frames img, .text {
+    -moz-border-radius: 3px;
+    -moz-transition: opacity 0.2s ease 0s;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    -o-transition: opacity 0.2s ease 0s;
+    -webkit-border-radius: 3px;
+    -webkit-transition: opacity 0.2s ease 0s;
+    background: #edf1f2;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    filter: alpha(opacity=90);
+    height: auto;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    max-width: 333px;
+    opacity: 0.9;
+    transition: opacity 0.2s ease 0s;
+    width: 100%;
+    -webkit-transform: translateZ(0)
+}
+
+.top {
+    border: none;
+    border-bottom: 1px dotted #1aa39a;
+    color: #1aa39a;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 1px;
+    width: 60px;
+}
+
+.bottom {
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    border: none;
+    color: #b1bfc4;
+    font-size: 16px;
+    line-height: 30px;
+    transition: all 0.2s ease 0s;
+}
+
+#frames img:hover, .text:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.text:hover .bottom, .bottom:hover {
+    border: none;
+    color: #78808f;
+}
+
+.text:hover .top, .top:hover {
+    border: none;
+    border-bottom: 1px solid #1aa39a;
+}
+
+.wip {
+    cursor: default !important;
+    opacity: 0.8 !important;
+}
+
+/* Close button
+   ================================================== */
+
+#close {
+    -moz-border-radius: 64px;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-border-radius: 64px;
+    -webkit-transition: all 0.2s ease 0s;
+    background: #fff;
+    border: 3px solid #e2e4e7;
+    border-radius: 64px;
+    cursor: pointer;
+    display: none;
+    font-family: "FontAwesome";
+    height: 28px;
+    position: fixed;
+    right: 20px;
+    transition: all 0.2s ease 0s;
+    width: 28px;
+    z-index: 9004;
+}
+
+#close p {
+    color: #3d4b4f;
+    font-size: 18px;
+    position: absolute;
+}
+
+#close p:active ~ #close, #close:active {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+#close:active ~ close p, #close p:active {
+    color: #e2e4e7
+}
+
+#close p:hover ~ #close, #close:hover {
+    border: 3px solid #1aa39a
+}
+
+/* Popups
+   ================================================== */
+
+#popups {
+    left: 100%;
+    position: absolute;
+    top: 8px;
+    width: 698px;
+}
+
+.popup1, .popup2, .popup3, .popup4, .popup5, .popup6, .popup7, .popup8, .popup9, .popup10, .popup11, .popup12, .popup13, .popup14, .popup16 {
+    display: none;
+    position: absolute;
+}
+
+#popups img {
+    -moz-border-radius: 3px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    -webkit-border-radius: 3px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    width: 666px;
+}
+
+#popups a {
+    border-bottom: 1px dotted #1aa39a;
+    color: #1aa39a;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 1px;
+}
+
+#popups p {
+    border: 1px solid #fff;
+    color: #3d4b4f;
+    line-height: 26px;
+    text-align: justify;
+    width: 666px;
+}

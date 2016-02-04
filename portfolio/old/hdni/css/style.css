@@ -1,0 +1,240 @@
+Body {
+	font-family: 'Oxygen', sans-serif;
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+}
+
+.text {
+	top: -10px;
+        width: 460px;
+        text-align: center;
+        margin: 0 auto;
+
+        color: #78808f;
+        font-size: 16px;
+        line-height: 30px;
+}
+
+.text a {
+	font-size: 16px;
+	font-weight: 700;
+	color: #1aa39a;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px dotted #abddda;
+	transition: all 0.2s ease 0s;
+}
+
+.text a:hover {
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+	border-bottom-style: solid;
+}
+
+::selection {
+	background: rgba(26,163,154,0.8);
+}
+
+::-moz-selection {
+	background: rgba(26,163,154,0.8);
+} 
+
+#header-wrapper {
+	margin: 0 auto;
+	padding-left: 30px;
+	background: #fff;
+	width: 900px;
+	border-bottom: 1px solid #e2e4e7;
+	padding-bottom: 45px;
+}
+
+	header h1 a {
+		position: fixed;
+        	color: #1f3461;
+        	font-size: 32px;
+		font-weight: 500;
+        	text-decoration: none;
+        	transition: all 0.2s ease 0s;
+	}
+  
+	header h1 a:hover {
+		color: #1aa39a;
+        	transition: all 0.2s ease 0s;
+	}
+  
+	header h2 a {
+		position: fixed;
+		margin-left: 810px;
+		top: 36px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #1aa39a;
+		text-decoration: none;
+		padding-bottom: 1px;
+		border-bottom: 1px dotted #abddda;
+		transition: all 0.2s ease 0s;
+	}
+	
+	header h2 a:hover {
+        	transition: all 0.2s ease 0s;
+		border-bottom-style: solid;
+	}
+
+#content-wrapper {
+	background: #fff;
+	position: relative;
+	z-index: 10;
+}
+
+#content-wrapper a{
+	font-size: 16px;
+	font-weight: 700;
+	color: #1AA39A;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px dotted #abddda;
+	transition: all 0.2s ease 0s;
+}
+
+#content-wrapper a:hover{
+	color: #1aa39a;
+	transition: all 0.2s ease 0s;
+	border-bottom-style: solid;
+}
+
+#stuff1 {
+	padding-bottom: 41px;
+	background: #fff;
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#stuff2 {
+	padding-bottom: 41px;
+	background: #fff;
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#stuff3 {
+	padding-bottom: 41px;
+	background: #fff;
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#bg {
+	background: #fff;
+	border-bottom: 1px solid #e2e4e7;
+	width: 900px;
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 28px;
+	font-weight: 400;
+	text-align: center;
+	color: #111e38;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+#morestuff1 {
+	padding-bottom: 41px;
+	background: #fff;
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+	
+        width: 460px;
+        text-align: center;
+        margin: 0 auto;
+
+        color: #78808f;
+        font-size: 16px;
+        line-height: 30px;
+}
+
+#morestuff2 {
+	padding-bottom: 41px;
+	background: #fff;
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+	
+        width: 460px;
+        text-align: center;
+        margin: 0 auto;
+
+        color: #78808f;
+        font-size: 16px;
+        line-height: 30px;
+}
+
+#morestuff3 {
+	padding-bottom: 41px;
+	background: #fff;
+	width: 900px;
+	margin: 0 auto;
+	overflow: auto;
+
+        width: 460px;
+        text-align: center;
+        margin: 0 auto;
+
+        color: #78808f;
+        font-size: 16px;
+        line-height: 30px;
+}
+	
+ul {
+	background: transparent;
+	list-style-type: none;
+	margin-left: -15px;
+}
+ 
+li img {
+	float: left;
+	margin: 8px;
+	border: 2px solid #e2e4e7;
+	opacity: 0.9;
+	transition : all 0.2s ease; 
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.0)
+}
+ 
+li img:hover {
+	opacity: 0.8;
+	border: 2px solid #1AA39A;
+	margin: 8px;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15)
+}
+
+#sb-nav-previous {
+
+border-top: 10px solid #1aa39a;
+border-bottom: 0px solid #1aa39a;
+border-left: 15px solid #1aa39a;
+border-right: 15px solid #1aa39a;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+}
+
+#sb-nav-next {
+border-top: 10px solid #1aa39a;
+border-bottom: 0px solid #1aa39a;
+border-right: 15px solid #1aa39a;
+border-left: 15px solid #1aa39a;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+}
+
+#sb-nav-close {
+border-top: 10px solid #1aa39a;
+border-bottom: 0px solid #1aa39a;
+border-right: 5px solid #1aa39a;
+border-left: 5px solid #1aa39a;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+}
